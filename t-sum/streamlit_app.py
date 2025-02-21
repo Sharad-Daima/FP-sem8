@@ -7,9 +7,10 @@ from langchain.docstore.document import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains.summarize import load_summarize_chain
 
-config = configparser.ConfigParser()
-config.read(os.path.join(os.path.dirname(__file__), '.', 'config.ini'))
-openai_api_key = config['OPENAI'].get('apikey')
+#config = configparser.ConfigParser()
+#config.read(os.path.join(os.path.dirname(__file__), '.', 'config.ini'))
+openai_api_key = "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"
+#config['OPENAI'].get('apikey')
 
 def generate_response(txt):
     llm = OpenAI(temperature=0, openai_api_key=openai_api_key)
