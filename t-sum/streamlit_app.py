@@ -21,9 +21,9 @@ def generate_response(txt):
     return chain.invoke({"input_documents": docs})
 
 # Page title
-st.set_page_config(page_title='🦜 Red Text Summariser')
-st.title('🦜 Red Text Summariser')
-st.caption("<p style='color:red'> A summarisation app powered by Streamlit, OpenAI, Langchain and RedLemon <p>", unsafe_allow_html=True)
+st.set_page_config(page_title='Text Summariser')
+st.title('Text Summariser')
+st.caption("<p style='color:white'> A summarisation app powered by Streamlit, OpenAI, Langchain and RedLemon <p>", unsafe_allow_html=True)
 
 # Text input
 txt_to_summarise = st.text_area('Enter your text', '', height=600)
